@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Debug-all</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SAS.Messages.Kafka\SAS.Messages.Kafka.csproj" />
+    <ProjectReference Include="..\SAS.Messages.RabbitMQ\SAS.Messages.RabbitMQ.csproj" />
+    <ProjectReference Include="..\SAS.Public\SAS.Public.csproj" />
+    <ProjectReference Include="..\ZDemo.SAS\ZDemo.SAS.csproj" />
+    <ProjectReference Include="..\ZTests.SAS.Public\ZTests.SAS.Public.csproj" />
+    <ProjectReference Include="..\ZTests.SAS\ZTests.SAS.csproj" />
+  </ItemGroup>
+
+</Project>

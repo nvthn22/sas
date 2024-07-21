@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Debug-all</Configurations>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Handler\" />
+    <Folder Include="ServiceJobs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SAS.Messages.RabbitMQ\SAS.Messages.RabbitMQ.csproj" />
+    <ProjectReference Include="..\SAS.Messages\SAS.Messages.csproj" />
+    <ProjectReference Include="..\SAS.Public\SAS.Public.csproj" />
+  </ItemGroup>
+
+</Project>

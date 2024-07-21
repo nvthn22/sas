@@ -1,0 +1,11 @@
+﻿{
+  "ConnectionStrings": {
+    "dbConnection": "data"
+  },
+  "Redis": {
+    "ConnectionString": "localhost:6379",
+    "Options": {
+      "SizeLimit": 1024
+    }
+  }
+}
